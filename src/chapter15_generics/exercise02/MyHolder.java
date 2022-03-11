@@ -6,11 +6,11 @@ import typeinfo.pets.Pet;
 
 import static ptmoskal.Print.print;
 
-public class Holder<T> {
+public class MyHolder<T> {
 
     private T a,b,c;
 
-    Holder(T a, T b, T c) {
+    MyHolder(T a, T b, T c) {
         this.a = a;
         this.b = b;
         this.c = c;
@@ -41,7 +41,7 @@ public class Holder<T> {
     }
 
     public static void main(String[] args) {
-        Holder<Pet> h = new Holder<>(new Pet(), new Cat(), new Dog());
+        MyHolder<Pet> h = new MyHolder<>(new Pet(), new Cat(), new Dog());
         print(h.getA());
         print(h.getB());
         print(h.getC());

@@ -1,0 +1,1 @@
+Exercise 4: (3) "Generify" innerclasses/Sequence.java.

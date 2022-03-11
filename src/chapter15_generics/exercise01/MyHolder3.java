@@ -5,7 +5,7 @@ import typeinfo.pets.Pet;
 
 import static ptmoskal.Print.print;
 
-public class Holder3<T> {
+public class MyHolder3<T> {
 //	private T a;
 //	public Holder3(T a) { this.a = a; }
 //	public void set(T a) { this.a = a; }
@@ -19,7 +19,7 @@ public class Holder3<T> {
 //	}
 
     private T data;
-    Holder3(T t) {
+    MyHolder3(T t) {
         this.data = t;
     }
 
@@ -32,7 +32,7 @@ public class Holder3<T> {
     }
 
     public static void main(String[] args) {
-        Holder3<Pet> h3 = new Holder3(new Pet());
+        MyHolder3<Pet> h3 = new MyHolder3(new Pet());
         print(h3.data);
         h3.setData(new Cat());
         print(h3.data);

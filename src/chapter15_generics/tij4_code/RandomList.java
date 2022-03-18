@@ -1,0 +1,27 @@
+package chapter15_generics.tij4_code;//: generics/RandomList.java
+
+import java.util.ArrayList;
+import java.util.Random;
+
+public class RandomList<T> {
+  private ArrayList<T> storage = new ArrayList<T>();
+  private Random rand = new Random(47);
+  public void add(T item) { storage.add(item); }
+  public T select() {
+    return storage.get(rand.nextInt(storage.size()));
+  }
+  public static void main(String[] args) {
+    long l = (1L << 48) - 1;
+    System.out.println(l);
+    System.out.println(Long.toBinaryString(l));
+    System.out.println(Long.toBinaryString(l+1));
+    RandomList<String> rs = new RandomList<String>();
+    for(String s: ("The quick brown fox jumped over " +
+        "the lazy brown dog").split(" "))
+      rs.add(s);
+    for(int i = 0; i < 11; i++)
+      System.out.print(rs.select() + " ");
+  }
+} /* Output:
+brown over fox quick quick dog brown The brown lazy brown
+*///:~

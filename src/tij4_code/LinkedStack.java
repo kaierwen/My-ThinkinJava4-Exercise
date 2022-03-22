@@ -1,4 +1,4 @@
-package chapter15_generics.tij4_code;//: generics/LinkedStack.java
+package tij4_code;//: generics/LinkedStack.java
 // A stack implemented with an internal linked structure.
 
 public class LinkedStack<T> {

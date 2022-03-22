@@ -1,4 +1,4 @@
-package chapter15_generics.tij4_code;//: generics/RandomList.java
+package tij4_code;//: generics/RandomList.java
 
 import java.util.ArrayList;
 import java.util.Random;
